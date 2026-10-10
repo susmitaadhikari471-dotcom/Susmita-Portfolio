@@ -157,8 +157,8 @@
         <img src="profile.jpg" alt="Susmita Adhikari" class="profile-img">
         <h1>Hi, I'm Susmita Adhikari 👋</h1>
         <p>Computer Engineering Student at Seoul Theological University</p>
-        <a href="#" class="demo-btn"> One Click For Demo Feature</a>
-        <div class="welcome-text">✨ Welcome to Susmita's Midterm Project Presentation!</div>
+        <a href="#" class="demo-btn" id="demoBtn">One Click For Demo Feature</a>
+<div class="welcome-text" id="welcomeText" style="display: none;">✨ Welcome to Susmita's Midterm Project Presentation!</div>
     </section>
 
     <!-- Technical Stack Section -->
@@ -179,6 +179,11 @@
             </div>
         </div>
     </section>
-
+<script>
+  document.getElementById('demoBtn').addEventListener('click', function(e) {
+    e.preventDefault();
+    document.getElementById('welcomeText').style.display = 'block';
+  });
+</script>
 </body>
 </html>
