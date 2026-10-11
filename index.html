@@ -18,6 +18,7 @@
             color: #c9d1d9;
             line-height: 1.6;
             overflow-x: hidden;
+            padding-bottom: 50px;
         }
         header {
             background: rgba(22, 27, 34, 0.9);
@@ -49,7 +50,7 @@
         }
         .hero {
             text-align: center;
-            padding: 60px 20px;
+            padding: 50px 20px;
         }
         .profile-img {
             width: 120px;
@@ -168,9 +169,6 @@
         .close-btn:hover {
             background: #7b1fa2;
         }
-        .footer-space {
-            height: 60px;
-        }
     </style>
 </head>
 <body>
@@ -182,12 +180,14 @@
             <a href="#homeland">Homeland</a>
         </nav>
     </header>
+
     <section class="hero">
         <img src="profile.jpg" alt="Susmita Adhikari" class="profile-img">
         <h1>Hi, I'm Susmita Adhikari 👋</h1>
         <p>Computer Engineering Student at Seoul Theological University</p>
         <button class="btn" onclick="openModal()">One Click For Demo Feature</button>
     </section>
+
     <div id="demoModal" class="modal">
         <div class="modal-content">
             <h3>🎉 Welcome Message</h3>
@@ -195,6 +195,7 @@
             <button class="close-btn" onclick="closeModal()">Close</button>
         </div>
     </div>
+
     <h2 class="section-title" id="skills">Technical Skill</h2>
     <div class="container">
         <div class="card">
@@ -210,4 +211,34 @@
             <p>VS Code, Git, Interactive Web Tools</p>
         </div>
     </div>
-    <h2 class="section-title" id="hobbies">My
+
+    <h2 class="section-title" id="hobbies">My Hobbies</h2>
+    <div class="container">
+        <div class="card">
+            <h3>✈️ Adventures & Hobbies</h3>
+            <p>Passionate about <strong>travelling</strong>, <strong>trekking</strong>, and <strong>exploring new areas</strong> to discover nature and fresh perspectives.</p>
+        </div>
+        <div class="card">
+            <h3>🎬 Entertainment & Drama</h3>
+            <p>Enjoy <strong>watching K-dramas</strong> during free time. Currently loving the gripping story and emotional depth of <strong>Queen of Tears</strong>.</p>
+        </div>
+    </div>
+
+    <h2 class="section-title" id="homeland">About My Homeland</h2>
+    <div class="container">
+        <div class="card" style="grid-column: 1 / -1; text-align: center;">
+            <h3>🇳🇵 Proudly from Nepal</h3>
+            <p>I originally hail from Nepal, a beautiful country nestled in the Himalayas known for its majestic mountains (including Mt. Everest), rich cultural heritage, warm hospitality, and stunning natural landscapes. Coming from Nepal to Seoul for my Computer Engineering studies has been an amazing journey of blending my roots with global tech knowledge!</p>
+        </div>
+    </div>
+
+    <script>
+        function openModal() {
+            document.getElementById('demoModal').style.display = 'flex';
+        }
+        function closeModal() {
+            document.getElementById('demoModal').style.display = 'none';
+        }
+    </script>
+</body>
+</html>
